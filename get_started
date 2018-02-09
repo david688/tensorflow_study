@@ -2,4 +2,27 @@ What's tensorflow?
       --open source software library for numerical computation using data flow graphs.
       --google开发，用于指导机器学习及神经网络研究。
       --在其他领域也有广泛的应用
+Why's tensorflow?
+      --支持python api接口
+      --高扩展性；可用于一个或者多个cpu，GPU桌面系统，服务器，移动设备等。
+      --可移植性；可用于树莓派、安卓、windows、ios、linux
+      --支持可视化
+      --支持检查点
+      --比较大的社区
+      --应用于大型项目
+使用tensorflow的公司：
+      --google、OpenAI、DeepMind、SnapChat、Uber、Airbus、eBay、DropBox
+ tensorflow几个cool的项目：
+      --neural style translation,该项目，给出一个输入一张代表内容的图片和一张代表风格的图片，深度学习网络会输出一张融合了这个风格和内容的新作品。
+      --Generative Handwriting
+      --WaveNet 语音合成
+ 学习tensorflow的参考书籍：
+      --TensorFlow for Machine Intelligence
+      --Hands-On Machine Learning with Scikit-Learn and TensorFlow
+      --Fundamentals of Deep Learning
+      --注：由于tensorflow还处于快速开发中，因此上述内容可能会过时，最好直接访问网站：tensorflow.org
+ 言归正传，正式开始tensorflow的学习：
+ 使用python api接口学习：
+      --首先使用包import tensorflow as tf:
+      
       
