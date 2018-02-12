@@ -22,6 +22,17 @@ Why's tensorflow?
       --Fundamentals of Deep Learning
       --注：由于tensorflow还处于快速开发中，因此上述内容可能会过时，最好直接访问网站：tensorflow.org
  言归正传，正式开始tensorflow的学习：
+ 
+ 一：tensorflow在fedroa系统的安装
+ 在python3安装该tensorflow包：
+ 1：安装python3、python3-pip、python3-virtualenv(如果安装过请忽略）
+ 2：virtualenv-3.5 --system-site-packages -p python3 tensorflow 建立一个单独的tensorflow运行环境
+ 3：source ~/tensorflow/bin/activate 使用运行环境生效
+ 4：进入(tensorflow) [zhangfh@localhost ~]$ 
+ 5:easy_install -U pip 升级pip、使用版本大于8.1 （如果该版本大于8.1 可以忽略）
+ 6：pip3 install --upgrade tensorflow  安装 tensorflow
+ 7:deactivate 命令解tensorflow运行环境
+ 8：删除tensorflow，可以直接删除命令 rm -rf tensorflow
  使用python api接口学习：
       --首先使用包import tensorflow as tf:
       
