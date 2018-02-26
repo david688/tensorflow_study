@@ -60,6 +60,16 @@ Why's tensorflow?
     还有一种方式：with tf.Session() as sess:
                     print(sess.run(a))
     这样就不用显示的调用close（）函数了
+    3:Session
+      Session对象用来执行操作对象的，可以根据各个子操作结果来计算最终的结果。例如
+       x = 2 
+       y = 3
+       op1 = tf.add(x,y)
+       op2 = tf.mul(x,y)
+       op3 = tf.pow(op2,op1)
+       with tf.Session as sess:
+            op3 = sess.run(op3)
+            print(op3)
    
       
       
