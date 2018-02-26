@@ -33,7 +33,31 @@ Why's tensorflow?
  6：pip3 install --upgrade tensorflow  安装 tensorflow
  7:deactivate 命令解tensorflow运行环境
  8：删除tensorflow，可以直接删除命令 rm -rf tensorflow
- 使用python api接口学习：
-      --首先使用包import tensorflow as tf:
+ 二：使用python api接口学习：
+    首先使用包import tensorflow as tf:
+    1：Graphs and Sessions
+    tensorflow 使数据定义和数据执行分开
+    数据流图大概有两个阶段：a：构建一个图，根据不同的操作关系；b:创建一个session执行图中的各个操作
+    2：what‘s tensorflow
+    总体上来说，tensorflow 是一个多维数组 0-d tensor :一个数字 ，1-d tensor：vector，2-d tensor： matrix
+    例如：>>> import tensorflow as tf
+    >>> a=tf.add(3,5)
+    此时打印a，并不是输出数字8，而是输出一个tensor
+    >>> print(a)
+    Tensor("Add:0", shape=(), dtype=int32)
+    Tensor board 展示如下图：
+    x------>|add
+    y------>|
+    那么，怎样才能获取a的值呢？？
+    创建一个session，sess=tf.Session()
+    print(sess.run(a))
+    sess.close()即可！
+    >>> sess=tf.Session()
+    2018-02-26 11:54:10.453635: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+    >>> print(sess.run(a))
+    8
+    >>> sess.Close()
+
+   
       
       
