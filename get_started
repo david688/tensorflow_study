@@ -57,7 +57,9 @@ Why's tensorflow?
     >>> print(sess.run(a))
     8
     >>> sess.Close()
-
+    还有一种方式：with tf.Session() as sess:
+                    print(sess.run(a))
+    这样就不用显示的调用close（）函数了
    
       
       
